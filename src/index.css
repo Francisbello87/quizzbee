@@ -1,13 +1,75 @@
-body {
+:root {
+  --blue-color: #293264;
+}
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--blue-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.karla {
+  font-family: "Karla", sans-serif;
+}
+h1 {
+  font-size: 32px;
+  color: var(--blue-color);
+}
+.App {
+  background: #f5f7fb;
+  height: 34.375rem;
+  width: 34.375rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.blobs {
+  position: absolute;
+  z-index: 1;
+}
+.blob-top {
+  top: 0;
+  right: 0;
+}
+.blob-bottom {
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+.onboarding {
+  width: 70%;
+  text-align: center;
+}
+.questions {
+  width: 80%;
+  text-align: center;
+}
+.answer-btn {
+  border: 1px solid var(--blue-color);
+  background: red;
+}
+
+.error-cta {
+  text-decoration: none;
+}
+.error-cta button {
+  margin-top: 10px;
+}
+
+.score {
+  text-align: center;
+}
+.start-btn {
+  z-index: 20;
 }
